@@ -32,6 +32,8 @@ function agregarAlCarrito(id) {
 
 
 function mostrarCarrito(productoAgregar) {
+    
+    const {nombre, id, precio,cantidad} = productoAgregar
 
     let div = document.createElement('div')
     div.className = 'productoEnCarrito'
@@ -75,7 +77,7 @@ function  actualizarCarrito (){
 
 
 function recuperar() {
- let recuperarLS = JSON.parse(localStorage.getItem('carrito'))  
+ let recuperarLS = JSON.parse(localStorage.getItem('carrito'))  || [] 
  
    
      recuperarLS.forEach(el=> {
