@@ -67,7 +67,7 @@ const sa = ()=> {
         clearInterval(timerInterval)
       }
     }).then((result) => {
-      /* Read more about handling dismissals below */
+      
       if (result.dismiss === Swal.DismissReason.timer) {
         console.log('I was closed by the timer')
       }
@@ -75,6 +75,24 @@ const sa = ()=> {
 }
    sa ()
 
+   const RetornocardContenido = (contenido)=> {
+    const { id, titulo, poster} = content
+    return 
+        
+    
+   } 
+   RetornocardContenido()
+
+
+
+   function pedirDatosALSRV(){
+    fetch('https://jsonplaceholder.typicode.com/todos/')
+      .then(response => response.json())
+      .then(json => console.log(json))
+       .catch((Error)=>console.error ("error producido:",Error))
+   } 
+
+   
 
 
 
