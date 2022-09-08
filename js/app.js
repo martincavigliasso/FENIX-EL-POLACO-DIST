@@ -88,9 +88,13 @@ const sa = ()=> {
    function pedirDatosALSRV(){
     fetch('https://jsonplaceholder.typicode.com/todos/')
       .then(response => response.json())
+      
       .then(json => console.log(json))
        .catch((Error)=>console.error ("error producido:",Error))
-   } 
+   }  
+ 
+   pedirDatosALSRV()
+
 
    
 
