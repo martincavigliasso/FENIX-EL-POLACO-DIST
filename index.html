@@ -50,7 +50,19 @@
         </div>
     </div>
 
- 
+    <script>let url = "https://jsonplaceholder.typicode.com/posts"
+                fetch (url)
+                    .then (Response => Response.json())
+                    .then(data => console.log (data))
+                    .catch (Error => console.log (Error)) 
+            const mostrarData = (data) => {
+                console.log(data)
+                let body = ""
+                for (let i = 0; i < data.length; i ++){
+                    
+                }
+            }  
+    </script>
     <script src="js/stock.js"></script>
     <script src="js/productos.js"></script>
     <script src="js/carrito.js"></script>
