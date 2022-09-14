@@ -52,9 +52,9 @@ function mostrarProductos(array){
 const sa = ()=> {
     let timerInterval
     Swal.fire({
-      title: 'OFERTAS QUE VUELAN, APROVECHALAS',
-      html: 'ESTE AVISO SE CERRARA EN <b></b> milliseconds.',
-      timer: 2000,
+      title: 'NOVEDAD:SALSA DE TOMATE ENVASADA',
+      html: 'ESTE AVISO SE CERRARA EN <b></b>',
+      timer: 5000,
       timerProgressBar: true,
       didOpen: () => {
         Swal.showLoading()
